@@ -1,5 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("JJDI Ikuy", "Synapse")
+
+--[[local Window = Library.CreateLib("JJDI Ikuy", colors)]]
+local Window = Library.CreateLib("JJDI Ikuy", "BloodTheme")
 local sp = game.Players.LocalPlayer.Character.Humanoid
 
 --[[Section:NewButton("T", "Scritps", function()
@@ -100,3 +102,5 @@ end)
 SettingSection:NewButton("ToggleUI", "Scritps", function()
     Library:ToggleUI()
 end)
+
+
