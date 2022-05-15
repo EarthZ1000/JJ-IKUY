@@ -91,6 +91,6 @@ SettingSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function
 	Library:ToggleUI()
 end)
 SettingSection:NewButton("FIX BUTTON FLASE", "Scritps", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EarthZ1000/TTT/main/file%22))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EarthZ1000/JJ-IKUY/main/file"))()
 end)
 
