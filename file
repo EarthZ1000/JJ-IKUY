@@ -90,8 +90,9 @@ local SettingSection = Tab:NewSection("SEting")
 SettingSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-SettingSection:NewButton("FIX BUTTON FLASE", "Scritps", function()
-    Library:ToggleUI(),
+SettingSection:NewButton("FIX BUTTON FLASE", "DELED UI frist", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EarthZ1000/JJ-IKUY/main/file"))()
 end)
-
+SettingSection:NewButton("DELED UI", "Scritps", function()
+    Library:ToggleUI()
+end)
