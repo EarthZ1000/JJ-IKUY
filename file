@@ -69,11 +69,12 @@ lolSection:NewSlider("Jump", "Jumppower", 500, 0, function(j) -- 500 (MaxValue) 
     sp.JumpPower = j
 end)
 
-lolSection:NewButton("CF", "CFF", function()
+lolSection:NewButton("Position", "Copy", function()
     setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
 end)
-
-
+lolSection:NewButton("CF", "Copy", function()
+    setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame))
+end)
 
 
 
@@ -90,9 +91,9 @@ local SettingSection = Tab:NewSection("SEting")
 SettingSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-SettingSection:NewButton("FIX BUTTON FLASE", "DELED UI frist", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/EarthZ1000/JJ-IKUY/main/file"))()
+SettingSection:NewButton("FIX BUTTON FLASE", "Scritps", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EarthZ1000/TTT/main/file%22))()
 end)
-SettingSection:NewButton("DELED UI", "Scritps", function()
-    Library:ToggleUI()
+SettingSection:NewButton("linkUI", "Scritps", function()
+    setclipboard(https://xheptcofficial.gitbook.io/kavo-library/)
 end)
