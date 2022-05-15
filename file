@@ -18,7 +18,7 @@ Section:NewButton("CMD X", "Scritps", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 Section:NewButton("Bot Clash", "Scritps", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripter/Scripts/master/BotClashHub.lua",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripter/Scripts/master/BotClashHub.lua"))()
 end)
 Section:NewButton("ZEPHYR x", "Scritps", function()
     pcall(function()
@@ -48,6 +48,99 @@ end)
 Section:NewButton("infinity", "Scritps", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+
+
+
+local Tab = Window:NewTab("Scriptnotrun")
+local S2Section = Tab:NewSection("SCR")
+
+S2Section:NewToggle("CMD X", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+    else
+        print("Toggle Off")
+    end
+end)
+
+S2Section:NewToggle("Bot Clash", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripter/Scripts/master/BotClashHub.lua"))()
+    else
+        print("Toggle Off")
+    end
+end)
+
+S2Section:NewToggle("ZEPHYR x", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ECLIPSEXHUB/ECLIPSE-X/main/ECLIPSE%20X.txt", true))()
+end)
+    else
+        print("Toggle Off")
+    end
+end)
+
+S2Section:NewToggle("remote", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		    local owner = "Upbolt"
+		local branch = "revision"
+
+			local function webImport(file)
+    			return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+	end
+
+	webImport("init")
+    webImport("ui/main")
+    else
+        print("Toggle Off")
+    end
+end)
+
+S2Section:NewToggle("Darkdex", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4", true))()
+    else
+        print("Toggle Off")
+    end
+end)
+
+S2Section:NewToggle("SAZAhub", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		    _G.Color = Color3.fromRGB(255, 255, 255)
+loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+    else
+        print("Toggle Off")
+    end
+end)
+
+S2Section:NewToggle("infiniyaide", "ToggleInfo", function(state)
+    if state then
+        print("Toggle On")
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,5 +195,3 @@ end)
 SettingSection:NewButton("ToggleUI", "Scritps", function()
     Library:ToggleUI()
 end)
-
-
